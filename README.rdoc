@@ -20,3 +20,16 @@ We are done. Seems like local anchors are not accepted while absolute anchors ar
 == Forth
 
 We are done. This behavior is different from what {github-markup}[https://github.com/github/markup] generates on the filesystem.
+
+
+== Summary
+
+* When rdoc is parsed on github, it seems to generated different the output `github-markup` generates locally.
+
+* That might be due to it using the rdoc coming with the ruby version (4.1.0) for ruby-2.1.5
+
+* And for real, running rdoc with `ruby-1.9.3` and `rdoc-3.6.1` yields locally the similar to the result on github.
+
+* `github-markup` simply outputs what rdoc returns and with irrelevant modifications (adds anchor tags before headings).
+
+* Finally, rdoc tocs (with local links) can be done, but not with githubs current rdoc version.
