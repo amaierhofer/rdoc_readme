@@ -1,0 +1,22 @@
+*Toc*
+
+- {First}[#first]
+- {Second}[#second]
+- {Third}[#third]
+- {Forth}[https://github.com/amaierhofer/rdoc_readme#forth]
+
+== First
+
+First things first.  We add some headings ..
+
+== Second
+
+Then come others. We try to reference them using links 
+
+== Third
+
+We are done. Seems like local anchors are not accepted while absolute anchors are fine. 
+
+== Forth
+
+We are done. This behavior is different from what {github-markup}[https://github.com/github/markup] generates on the filesystem.
